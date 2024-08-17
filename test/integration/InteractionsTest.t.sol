@@ -21,7 +21,7 @@ contract FundMeTestIntegration is Test{
         vm.deal(USER, STARTING_BALANCE);
     }
 
-    /**function testUserCanFundInteractions() public {
+    function testUserCanFundInteractions() public {
         FundFundMe fundFundMe = new FundFundMe();
         fundFundMe.fundFundMe(address(fundMe));
 
@@ -32,5 +32,5 @@ contract FundMeTestIntegration is Test{
         withdrawFundMe.withdrawFundMe(address(fundMe));
 
         assert(address(fundMe).balance == 0);
-    }**/
+    }
 }
